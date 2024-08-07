@@ -1,0 +1,15 @@
+{
+  "name": "clipboard",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {},
+  "type": "module",
+  "keywords": [],
+  "author": "ecan",
+  "license": "ISC",
+  "description": "Save clipboard data",
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "express": "^4.19.2"
+  }
+}
