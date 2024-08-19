@@ -98,7 +98,12 @@ function hdClick(e) {
     const id = del.parentNode.dataset.id;
     delText(id);
   } else if (text) {
-    copyText(text.innerText);
+    const selectionText = document.getSelection().toString();
+    if (selectionText) {
+      copyText(selectionText);
+    } else {
+      copyText(text.innerText);
+    }
   } else if (btn) {
     const flag = btn.dataset.flag;
     if (flag === 'prev') {
